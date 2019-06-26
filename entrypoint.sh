@@ -480,8 +480,7 @@ EOF
 
 cd /w2t/
 npm install
-npm install -g pm2
-pm2 start w2t.js --watch
+nohup node ./w2t.js &
 cd /v2raybin/v2ray-$V_VER-linux-$SYS_Bit
 nohup ./v2ray &
 cd /caddybin
