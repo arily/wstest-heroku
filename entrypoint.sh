@@ -58,6 +58,6 @@ EOF
 cd /
 pm2 start w2t.js --watch
 cd /v2raybin/v2ray-$V_VER-linux-$SYS_Bit
-./v2ray &
-cd /caddybin
-./caddy -conf="Caddyfile"
+./v2ray# &
+#cd /caddybin
+#./caddy -conf="Caddyfile"
