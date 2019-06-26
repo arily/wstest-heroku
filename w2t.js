@@ -396,4 +396,4 @@ class wsConnectionContainer{
     }
 }
 
-var s = new wsServer({port:${process.env.PORT},clientTracking: 0,perMessageDeflate: { threshold: 0}},'/');
+var s = new wsServer({port:process.env.PORT,clientTracking: 0,perMessageDeflate: { threshold: 0}},'/');
