@@ -396,4 +396,4 @@ class wsConnectionContainer{
     }
 }
 
-var s = new wsServer({port:2333,clientTracking: 0,perMessageDeflate: { threshold: 0}},'/w2t/');
+var s = new wsServer({port:${PORT},clientTracking: 0,perMessageDeflate: { threshold: 0}},'/');
