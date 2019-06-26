@@ -1,8 +1,4 @@
 #! /bin/bash
-if [[ -z "${V2_Path}" ]]; then
-  V2_Path="/w2t"
-fi
-
 rm -rf /etc/localtime
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 date -R
