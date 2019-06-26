@@ -2,7 +2,7 @@ FROM debian:sid
 
 RUN apt update -y \
     	&& apt upgrade -y \
-    	&& apt install -y wget unzip qrencode nodejs npm
+    	&& apt install -y wget unzip nodejs npm
 
 ADD entrypoint.sh /entrypoint.sh
 ADD w2t.js /w2t.js
