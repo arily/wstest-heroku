@@ -471,16 +471,18 @@ http://0.0.0.0:${PORT}
 	root /wwwroot
 	index index.html
 	timeouts none
-	proxy ${V2_Path} localhost:2333 {
+	proxy /w2t localhost:2333 {
 		websocket
 		header_upstream -Origin
 	}
 }
 EOF
+
 cd /w2t/
-
-
+npm install
+npm install -g pm2
+pm2 start w2t.js --watch
 cd /v2raybin/v2ray-$V_VER-linux-$SYS_Bit
-./v2ray &
+nohup ./v2ray &
 cd /caddybin
 ./caddy -conf="Caddyfile"
