@@ -16,7 +16,7 @@
        "value": "10"
      }
   },
-  "website": "https://github.com/qingyuan0o0/v2ray-heroku-undone",
-  "repository": "https://github.com/qingyuan0o0/v2ray-heroku-undone",
+  "website": "https://github.com/qingyuan0o0/wstest-heroku",
+  "repository": "https://github.com/qingyuan0o0/wstest-heroku",
   "stack": "container"
  }
